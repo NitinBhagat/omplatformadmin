@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk>
+	<!-- [Optional]
+	Uncomment if you want to defines the application's name 
+	    -->
+    <preference>
+            <name>org.zkoss.zk.ui.WebApp.name</name>
+            <value>OM Platform Admin Panel</value>
+    </preference>
+
+    <library-property>
+        <name>org.zkoss.zkmax.tablet.ui.disabled</name>
+        <value>true</value>
+    </library-property>
+    <session-config>
+        <device-type>ajax</device-type>
+        <!--<session-timeout>20000</session-timeout>-->
+        <!--        <max-desktops-per-session>15</max-desktops-per-session>
+        <max-requests-per-session>5</max-requests-per-session>-->
+        <automatic-timeout>false</automatic-timeout>
+        <timeout-uri>/index.zul</timeout-uri>
+        <timer-keep-alive>true</timer-keep-alive>
+        <timer-as-inactive>true</timer-as-inactive>
+    </session-config>
+    
+    <system-config>
+        <ui-factory-class>org.zkoss.zk.ui.http.SerializableUiFactory
+        </ui-factory-class>
+    </system-config>
+    
+</zk>
