@@ -8,6 +8,10 @@
             <name>org.zkoss.zk.ui.WebApp.name</name>
             <value>OM Platform Admin Panel</value>
     </preference>
+    <preference>
+            <name>org.zkoss.zk.ui.WebApp.version</name>
+            <value>1.0.0</value>
+    </preference>
 
     <library-property>
         <name>org.zkoss.zkmax.tablet.ui.disabled</name>
